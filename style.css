@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  padding: 30px;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h1 {
+  font-size: 3rem;
+  max-width: 1020px;
+  padding: 20px;
+  filter: drop-shadow(0 0 0.3rem #ffab23);
+}
+.span-q {
+  color: #ffab23;
+}
+img {
+  max-width: 600px;
+}
+h2 {
+  display: none;
+  font-size: 2rem;
+  padding: 40px;
+  max-width: 1200px;
+  text-align: center;
+}
+.content {
+  max-width: 1000px;
+  margin: 40px;
+}
+
+#kanye-quote {
+  font-size: 2rem;
+  /* letter-spacing: 2px; */
+}
+#change-quote {
+}
+/* button {
+  height: 100px;
+  width: 100px;
+  margin-top: 40px;
+  box-shadow: inset 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 100px;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Arial;
+  border: none;
+  font-weight: 600;
+  padding: 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  transition: transform 0.75s, opacity 0.25s ease-in-out;
+  opacity: 0.7;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: serif;
+  line-height: 1;
+}
+button:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+  filter: drop-shadow(0 0 0.75rem #ffab23);
+  opacity: 1;
+  transform: rotate(360deg);
+  font-size: 23px;
+} */
+button {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  outline: 2px solid #ffab23;
+  padding: 20px 60px;
+  overflow: hidden;
+  transition: color 1s;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  transform: skewX(-10deg);
+  box-shadow: 1px 1px 10px 5px #ffab23;
+}
+button:hover {
+  color: black;
+}
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: #ffab23;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: transform 1s;
+}
+button:hover::before {
+  transform: scale(1) skewX(35deg);
+  filter: drop-shadow(0 0 0.35rem #ffab23);
+}
